@@ -61,14 +61,14 @@ Firmware setup
 #.   Download APM firmware `here: <https://files.zubax.com/3rdparty/APM/uavcan_epm/>`__
 #.   Upload custom firmware via Mission Planner or QGC
  
-***A pull request has been issued to include the changes in the next APM release. This documentation will be update when the request has been accepted. If this annoys you please write a comment `here <https://github.com/ArduPilot/ardupilot/pull/4361>`__
+***A pull request has been issued to include the changes in the next APM release. This documentation will be updated when the request has been accepted. If this annoys you please write a comment `here <https://github.com/ArduPilot/ardupilot/pull/4361>`__
 
 Parameter setup
 ===============
 
 #. Set BRD_CAN_ENABLE = 2 ( Enabled support for dynamic node ID allocation and firmware update.)
    Save and restart the board. 
-   After about 5 seconds the RED CAN LED on the EPM will start blinking. Indicating that CAN frames are being received
+   After about 5 seconds the RED CAN LED on the EPM will start blinking, indicating that CAN frames are being received
 
    .. image:: ../../../images/OpenGrabEPMV3_3.jpg
        :target: ../_images/OpenGrabEPMV3_3.jpg
@@ -124,15 +124,15 @@ releasing the cargo or if left in the "on" state with no cargo
 attached.  
 Magnetic interferance is minimal at a distance of 10 cm
 
-Testing the EPM impact on the compass is highly recomend when mounted close then 10 cm distance from flight computer
+Testing the EPM impact on the compass is highly recomended when mounted closer than 10 cm distance from flight computer
 
 The EPM's impact on the compass can be tested in real-time by connecting
-with the Mission Planner, go to the Flight Data screen and click on the
+with the Mission Planner. Go to the Flight Data screen and click on the
 "Tuning" checkbox at the bottom, middle.  Double click on the graph that
 appears on the top right and when the "Graph This" window appears select
 "magfield".
 
-Turning the EPM on and off and ensure the magfield length does not
+Turn the EPM on and off and make sure that the magfield length does not
 change by more than 10%.
 
 .. image:: ../../../images/mag_field.jpg
